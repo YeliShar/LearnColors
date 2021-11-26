@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=UTF-8>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Learn Colors</title>
+	<link rel='icon' href='favicon.png' type='images/png'>
+	<link href='https://fonts.googleapis.com/css2?family=Poiret+One&display=swap' rel='stylesheet'>
+	<link rel='stylesheet' href='css/font-awesome.min.css'>
+	<link rel='stylesheet' href='learnColors.css'>
+	<script src='https://threejs.org/build/three.min.js'></script>
+	<script src='https://threejs.org/examples/js/controls/OrbitControls.js'></script>
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+</head>
+<body>
+	<div class='preloader'></div>
+	<audio id='musichtml' loop>
+		<source src='musicforsite.ogg' type='audio/ogg; codecs=vorbis' loop />
+		<source src='musicforsite.mp3' type='audio/mpeg' loop />
+	</audio>
+	<div class='name'>Learn Colors</div>
+	<div class='animationDiv'>
+		<div class='contents'>
+			<div class='leftButton'>
+				<i class='fa fa-long-arrow-left' aria-hidden='true'></i>
+			</div>
+			<div class='nameColor'></div>
+			<div class='rightButton'>
+				<i class='fa fa-long-arrow-right' aria-hidden='true'></i>
+			</div>
+		</div>
+		<div class='viewColor'>
+			<div class='viewFigure'>
+				<canvas id='c'>
+					Your browser is not supported CANVAS. 
+				</canvas>	 
+			</div>
+			<div class='ansverFigure'>
+				<div class='ansver'>
+					<div class='oneanswer btn btn-5'></div>
+					<div class='twoanswer btn btn-5'></div>
+				</div>
+				<div class='ansver'>
+					<div class='threeanswer btn btn-5'></div>
+					<div class='fouranswer btn btn-5'></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='home'>
+		<input type='button' class='one btn btn-5' onclick='colorLearnInput()' value='Изучи цвета' />
+		<input type='button' class='two btn btn-5' onclick='colorGameInput()' value='Отгадай цвет' />
+	</div>
+</body>
+<script src='learnColors.js'></script>
+</html>
